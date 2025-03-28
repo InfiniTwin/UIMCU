@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "UIMCU",
+	"Description": "Color libraries for Material You",
+	"Category": "UI",
+	"CreatedBy": "Material Foundation",
+	"CreatedByURL": "https://github.com/material-foundation/material-color-utilities",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UIMCU",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
