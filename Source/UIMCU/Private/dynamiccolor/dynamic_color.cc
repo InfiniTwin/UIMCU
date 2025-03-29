@@ -121,6 +121,15 @@ DynamicColor DynamicColor::FromPalette(
                       /*tone_delta_pair=*/nullopt);
 }
 
+FLinearColor DynamicColor::GetLinear(const DynamicScheme& scheme) {
+    auto Argb = GetArgb(scheme);
+    float A = ((Argb >> 24) & 0xFF) / 255.0f;
+    float R = ((Argb >> 16) & 0xFF) / 255.0f;
+    float G = ((Argb >> 8) & 0xFF) / 255.0f;
+    float B = (Argb & 0xFF) / 255.0f;
+    return FLinearColor(R, G, B, A);
+}
+
 Argb DynamicColor::GetArgb(const DynamicScheme& scheme) {
   return palette_(scheme).get(GetTone(scheme));
 }

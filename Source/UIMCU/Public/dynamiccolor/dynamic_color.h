@@ -107,6 +107,8 @@ struct UIMCU_API DynamicColor {
       std::function<TonalPalette(const DynamicScheme&)> palette,
       std::function<double(const DynamicScheme&)> tone);
 
+  FLinearColor GetLinear(const DynamicScheme& scheme);
+
   Argb GetArgb(const DynamicScheme& scheme);
 
   Hct GetHct(const DynamicScheme& scheme);
