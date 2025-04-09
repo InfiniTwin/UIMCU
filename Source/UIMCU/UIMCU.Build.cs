@@ -8,11 +8,13 @@ public class UIMCU : ModuleRules
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", });
+		PublicDependencyModuleNames.AddRange(new string[] { 
+			"Core", 
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {
-				"CoreUObject",
-				"Engine",
-			});
+			"CoreUObject",
+			"Engine",
+		});
 	}
 }
